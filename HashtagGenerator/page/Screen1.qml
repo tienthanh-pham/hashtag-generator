@@ -7,9 +7,9 @@ Item {
         Text {
             id: lable_name1
             text: "#Hashtag"
-            anchors.top: parent.top
-            anchors.topMargin: parent.height / 4
-            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.top: lable.top
+            anchors.topMargin: lable.height / 4
+            anchors.horizontalCenter: lable.horizontalCenter
             font.pixelSize: 40
             font.bold: true
         }
@@ -36,7 +36,7 @@ Item {
             width: parent.width * 3 / 4; height: parent.height * 2 / 3
             anchors.top: lable_input.bottom
             anchors.topMargin: 10
-            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.horizontalCenter: input.horizontalCenter
             color: "transparent"
             border.width: 1
             clip: true
@@ -60,7 +60,7 @@ Item {
             width: parent.width * 1 / 3; height: parent.height * 1 / 6
             anchors.top: input_border.bottom
             anchors.topMargin: 10
-            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.horizontalCenter: input.horizontalCenter
             color: "lightgray"
             border.width: 1
             Text {
@@ -113,7 +113,7 @@ Item {
             width: parent.width * 3 / 4; height: parent.height * 2 / 3
             anchors.top: lable_result.bottom
             anchors.topMargin: 10
-            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.horizontalCenter: result.horizontalCenter
             color: "transparent"
             border.width: 1
             clip: true

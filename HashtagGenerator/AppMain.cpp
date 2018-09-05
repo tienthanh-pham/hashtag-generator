@@ -10,6 +10,8 @@ AppMain::AppMain()
     m_hashtagGenerator = new HashtagGenerator();
     //Initialize HOME screen
     m_view.setSource(QUrl(m_screenList.getScreen(SCREENLIST::HOME)));
+    m_view.setWidth(400);
+    m_view.setHeight(600);
     m_view.show();
     m_rootObject = m_view.rootObject()->findChild<QObject*>(MAIN_LOADER);
     m_adapter->setRootObject(m_rootObject);
